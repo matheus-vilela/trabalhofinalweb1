@@ -9,6 +9,15 @@ export const Container = styled.div`
   height: 100vh;
   width: 100vw;
   background: ${(props) => props.theme.colors.background};
+  .title {
+    font-size: 3.4rem;
+    font-weight: 700;
+    color: ${(props) => props.theme.colors.black};
+    text-align: center;
+    margin-bottom: 10rem;
+    background-color: transparent;
+    box-shadow: none;
+  }
 
   div {
     display: flex;

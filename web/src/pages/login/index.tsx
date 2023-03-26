@@ -9,6 +9,7 @@ const Login: React.FC = () => {
 
   return (
     <Container>
+      <span className="title">PLATAFORMA DE VOTAÇÃO</span>
       <div>
         <h1>Entrar</h1>
         <p>
