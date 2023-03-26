@@ -133,7 +133,7 @@ export const Form = styled.form`
         }
       }
 
-      button {
+      div {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -148,6 +148,7 @@ export const Form = styled.form`
         font-weight: 600;
         cursor: pointer;
         transition: 0.2s;
+        width: 40px;
       }
     }
   }

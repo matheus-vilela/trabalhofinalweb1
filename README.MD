@@ -1,9 +1,11 @@
-# Doacao de sangue
+# Votação UFOP - Trabalho final Web 1
 ---
 ## Objetivo
 
-Atividade desenvolvida com o intuito de criar um sistema com backend e web.
+Atividade desenvolvida com o intuito de criar um sistema com servidor e web.
+\
 Este é um sistema de Votação apenas com acesso a usuários da instuição da UFOP.
+\
 É obrigatório o login com o email institucional "ufop.edu.br" nenhum outro email será aceito.
 
 ## Teconologias utilizadas

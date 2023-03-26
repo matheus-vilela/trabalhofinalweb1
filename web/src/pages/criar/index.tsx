@@ -14,9 +14,16 @@ const Criar: React.FC = () => {
     const form = e.currentTarget;
     const formData = new FormData(form);
     const props = Object.fromEntries(formData);
-
+    console.log({
+      ...props,
+      opcoes: option.map((item, index) => ({
+        id: String(index + 1),
+        nome: item,
+        votos: 0,
+      })),
+    });
     const api = axios.create({
-      baseURL: 'http://localhost:3333',
+      baseURL: 'http://localhost:3002',
     });
 
     api.post('/votacao', {
@@ -48,11 +55,11 @@ const Criar: React.FC = () => {
           <div className="row">
             <div className="item">
               <label>Data de inicio</label>
-              <input type="date" name="datainicio" />
+              <input type="datetime-local" name="datainicio" />
             </div>
             <div className="item">
               <label>Data de fim</label>
-              <input type="date" name="datafim" />
+              <input type="datetime-local" name="datafim" />
             </div>
           </div>
           <div className="opcao">
@@ -74,21 +81,16 @@ const Criar: React.FC = () => {
             <label style={{ paddingTop: 10 }}>Adicione uma opção</label>
             <div>
               <input type="text" value={text} onChange={(e) => setText(e.target.value)} />
-              <button
+              <div
                 style={{ background: '#545454' }}
                 onClick={() => {
-                  if (text.length) {
-                    if (option.includes(text)) {
-                      alert('Opção já adicionada');
-                      return;
-                    }
-                    setOption((prev) => [...prev, String(text)]);
-                    setText('');
-                  }
+                  console.log(text, option);
+                  setOption((prev) => [...prev, String(text)]);
+                  setText('');
                 }}
               >
                 <FaPlusCircle size={16} />
-              </button>
+              </div>
             </div>
           </div>
           <ButtonSubmit type="submit">Criar</ButtonSubmit>

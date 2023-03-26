@@ -10,15 +10,15 @@ Considerando que já tenha o Docker instalado previamente em sua máquina:
 
 1) Crie um container no Docker utilizando o código abaixo:
 ```
-docker run --name 'blood-donation' -e POSTGRES_USER=root -e POSTGRES_PASSWORD=root -p 5432:5432 -d postgres
+docker run --name pg -e POSTGRES_USER=root -e POSTGRES_PASSWORD=root -p 5432:5432 -d postgres
 ```
 2) Execute o codigo abaixo para garantir que o container foi inicializado:
 ```
-docker start 'blood-donation'
+docker start pg
 ```
 3) Abra o console do container:
 ```
-docker exec -it 'blood-donation' bash
+docker exec -it pg bash
 ```
 4) Logue no postgress:
 ```
@@ -26,7 +26,7 @@ psql -U root
 ```
 5) Execute o comando abaixo para criar o banco de dados:
 ```
-CREATE DATABASE blooddonation;
+CREATE DATABASE votacao;
 ```
 \
 Pronto DATABASE criado!
