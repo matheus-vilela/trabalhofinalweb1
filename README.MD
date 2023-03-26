@@ -8,11 +8,16 @@ Este é um sistema de Votação apenas com acesso a usuários da instuição da 
 \
 É obrigatório o login com o email institucional "ufop.edu.br" nenhum outro email será aceito.
 
+\
+[`apresentação - YouTube`](https://youtu.be/bP9ySGSzBMI)
+
+[`figma`](https://www.figma.com/file/2oVgsTptwP5MYhttwme3Fa/trabalhoFinalWeb?node-id=0-1&t=mI5CvCrTgjhTzu9v-0)
+
 ## Teconologias utilizadas
 - Node
 - express
 - morgan
-- Vite
+- Vite + React
 - styled-components
 - react-router-dom
 - react-hooks
@@ -20,12 +25,12 @@ Este é um sistema de Votação apenas com acesso a usuários da instuição da 
 ## Configurar ambiente
 
 Selecione qual ambiente deseja configurar para obter detalhes de instalação.
+
 \
 [`backend`](server/README.MD)
-\
+
 [`frontend`](web/README.MD)
-\
-[`figma`](https://www.figma.com/file/2oVgsTptwP5MYhttwme3Fa/trabalhoFinalWeb?node-id=0-1&t=mI5CvCrTgjhTzu9v-0)
+
 ---
 ---
 by Matheus Vilela
